@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+# System
+# ******
+alias shutdown='sudo shutdown now'
+alias restart='sudo reboot'
+#alias suspend='sudo pm-suspend'
+
+# grep
+# ****
+alias grep="grep -P -i --color=auto"
+
+# Enable Color LS for Shell
+alias ls='colorls'
+
