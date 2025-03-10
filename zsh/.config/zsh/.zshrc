@@ -33,8 +33,8 @@ setopt COMPLETE_IN_WORD
 # autoload -U colors
 #colors
 
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
+#eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/id_ed25519
 
 # Ultramarine ZSH config
 # initialize starship
@@ -64,3 +64,4 @@ setopt SHARE_HISTORY
 
 # Enable Color LS for Shell
 alias ls='colorls'
+alias la='ls -al'

@@ -1,0 +1,61 @@
+# This file is managed by GNU Stow and thus symlinked to $HOME/.dotfiles
+# $HOME/.config/starship/starship.toml => $HOME/.dotfiles/starship/.config/starship/starship.toml
+# See $HOME/.config/zsh/.zprofile for $STARSHIP_CONFIG environment variable
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# inserts a blank line between shell prompts
+add_newline = true
+
+# battery status symbols
+[battery]
+discharging_symbol = "󰁽 "
+charging_symbol = "⚡️ "
+full_symbol	= "󰁹 "
+
+# battery low threshold
+[[battery.display]]
+style = 'bold yellow'
+threshold = 15
+
+# directory configuration
+[directory]
+read_only = " "
+
+# prompt configuration
+[character]
+# success_symbol = '[❯](bold green)'
+success_symbol = '[✔](bold green) '
+# error_symbol = '[❯](bold red)'
+error_symbol = '[✘](bold red) '
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+# Disable the package module, hiding it from the prompt
+[package]
+disabled = true
+
+[jobs]
+symbol = "+"
+number_threshold = 4
+symbol_threshold = 1
+
+[hostname]
+ssh_only = false
+format = "[$ssh_symbol](bold blue) on [$hostname](bold yellow) "
+trim_at = ".companyname.com"
+disabled = false
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
